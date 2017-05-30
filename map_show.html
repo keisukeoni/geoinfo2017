@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>地図表示サンプル</title>
+	<style type="text/css">
+		html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+
+		}
+		#map {
+			height: 94%;
+		}
+	</style>
+	<script src="http://maps.google.com/maps/api/js?sensor=false&language=ja"></script>
+</head>
+<body>
+<body>
+	<div>
+		<strong>地図表示サンプル</strong>
+	</div>
+	<div id="map"></div>
+	<div style="text-align: center;">Copyright(C) 2017 Keisuke Inoue (71730009). All Rights Reserved.</div>
+	<script type="text/javascript">
+		//静岡大学　浜松キャンパス　緯度経度　34.7245225,137.7177968
+		//静岡大学から浜松城の中間　緯度経度　34.7174491,137.719104
+		//浜松城　緯度経度　　　　　　　　　　34.7174491,137.719104
+		var latlng = new google.maps.LatLng(34.7245225, 137.7177968);
+		var options = {
+			zoom: 15,
+			center: latlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(document.getElementById('map'), options);
+	</script>
+</body>
+</body>
+</html>
