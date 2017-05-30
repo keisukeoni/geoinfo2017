@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<title>円表示サンプル</title>
+	<title>すべて表示サンプル</title>
 	<style type="text/css">
 		html, body {
 			width: 100%;
@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div>
-		<strong>円表示サンプル</strong>
+		<strong>すべて表示サンプル</strong>
 	</div>
 	<div id="map"></div>
 	<div style="text-align: center;">Copyright(C) 2017 Keisuke Inoue (71730009). All Rights Reserved.</div>
@@ -35,15 +35,18 @@
 		}
 		var map = new google.maps.Map(document.getElementById('map'), options);
 
-		//latlng = new google.maps.LatLng(34.7245225, 137.7177968), //静岡大学浜松キャンパス
-		//latlng_catsle = new google.maps.LatLng(34.7117718, 137.7248914) //浜松城
+		latlng = new google.maps.LatLng(34.7245225, 137.7177968), //静岡大学浜松キャンパス
+		latlng_catsle = new google.maps.LatLng(34.7117718, 137.7248914) //浜松城
 
-		var popCircle = new google.maps.Circle({
-			map: map,
-			center: latlng_mid,
-			radius: 300 //メートル
+		//静岡大学から浜松城まで直線を引く
+		var points = [
+			latlng,
+			latlng_catsle
+		];
+		var line = new google.maps.Polyline({
+			path: points,
+			map: map
 		});
-
 	</script>
 </body>
 </html>
