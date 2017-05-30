@@ -4,3 +4,5 @@
 http://keisuke-oni.github.io/geoinfo2017/map_show.html
 
 http://keisuke-oni.github.io/geoinfo2017/marker_show.html
+
+http://keisuke-oni.github.io/geoinfo2017/line_show.html
