@@ -8,3 +8,5 @@ http://keisuke-oni.github.io/geoinfo2017/marker_show.html
 http://keisuke-oni.github.io/geoinfo2017/line_show.html
 
 http://keisuke-oni.github.io/geoinfo2017/circle_show.html
+
+http://keisuke-oni.github.io/geoinfo2017/20170524.gpx
