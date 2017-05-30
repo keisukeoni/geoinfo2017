@@ -53,13 +53,11 @@
 				for (var i = 0; i < wpt.length; i++) {
 					var lat_wpt = wpt[i].getAttribute('lat');
 					var lon_wpt = wpt[i].getAttribute('lon');
-					console.log(lat_wpt);
-					console.log(lon_wpt);
 					var latlng_wpt = new google.maps.LatLng(lat_wpt, lon_wpt);
 					var marker_wpt = new google.maps.Marker({
-						position: latlng_wpt
+						position: latlng_wpt,
+						map: map
 					});
-					marker_wpt.setMap(map);
 				}
 				var trkpt = dom.getElementsByTagName('trkpt');
 				var points = [];
