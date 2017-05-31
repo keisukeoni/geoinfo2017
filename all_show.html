@@ -47,6 +47,22 @@
 			path: points,
 			map: map
 		});
+
+		var marker = new google.maps.Marker({
+			position: latlng,
+			map: map
+		});
+		var marker_castle = new google.maps.Marker({
+			position: latlng_catsle,
+			map: map
+		});
+
+		var popCircle = new google.maps.Circle({
+			map: map,
+			center: latlng_mid,
+			radius: 300 //メートル
+		});
+
 	</script>
 </body>
 </html>
