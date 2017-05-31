@@ -36,12 +36,12 @@
 		var map = new google.maps.Map(document.getElementById('map'), options);
 
 		latlng = new google.maps.LatLng(34.7245225, 137.7177968), //静岡大学浜松キャンパス
-		latlng_catsle = new google.maps.LatLng(34.7117718, 137.7248914) //浜松城
+		latlng_castle = new google.maps.LatLng(34.7117718, 137.7248914) //浜松城
 
 		//静岡大学から浜松城まで直線を引く
 		var points = [
 			latlng,
-			latlng_catsle
+			latlng_castle
 		];
 		var line = new google.maps.Polyline({
 			path: points,
@@ -53,7 +53,7 @@
 			map: map
 		});
 		var marker_castle = new google.maps.Marker({
-			position: latlng_catsle,
+			position: latlng_castle,
 			map: map
 		});
 
